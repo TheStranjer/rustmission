@@ -50,6 +50,7 @@ keybindings = [
   { on = "t", action = "ShowTrackers" },
   { on = "s", action = "ShowStats" },
   { on = "d", action = "Delete" },
+  { on = "F", action = "CycleStatusFilter" },
 ]
 
 [torrents_tab_file_viewer]

@@ -13,6 +13,7 @@ pub enum TorrentsAction {
     ShowTrackers,
     ShowStats,
     ChangeCategory,
+    CycleStatusFilter,
 }
 
 impl UserAction for TorrentsAction {
@@ -27,6 +28,7 @@ impl UserAction for TorrentsAction {
             TorrentsAction::ShowStats => "show statistics",
             TorrentsAction::ChangeCategory => "change category",
             TorrentsAction::Rename => "rename torrent path",
+            TorrentsAction::CycleStatusFilter => "cycle status filter",
         }
     }
 }
@@ -43,6 +45,7 @@ impl From<TorrentsAction> for Action {
             TorrentsAction::ShowStats => Action::ShowStats,
             TorrentsAction::ChangeCategory => Action::ChangeCategory,
             TorrentsAction::Rename => Action::Rename,
+            TorrentsAction::CycleStatusFilter => Action::CycleStatusFilter,
         }
     }
 }
